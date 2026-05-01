@@ -75,6 +75,8 @@ graph TD
 </div>
 
 ![img](images/enroll_Ahmed.png)
+
+<img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/enroll_Ahmed.png" width="800">
 ---
 
 ##  طريقة التشغيل (How to Run)
