@@ -70,13 +70,11 @@ graph TD
 * **لماذا نستخدمها؟** الشفرة الثنائية لا تتأثر بتغير السطوع الإجمالي، ومقارنتها سريعة جداً.
 
 <div align="center">
-  <img src="images/enroll_Ahmed.png" alt="Localization and Normalization" width="800">
+   <img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/academic_iris.png" width="800"/>
   <p><em>صورة (1): الدوائر الدقيقة حول الحدقة والقزحية وعملية فرد القزحية (Normalization)</em></p>
 </div>
 
-![img](images/enroll_Ahmed.png)
 
-<img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/enroll_Ahmed.png" width="800">
 ---
 
 ##  طريقة التشغيل (How to Run)
