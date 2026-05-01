@@ -18,7 +18,6 @@
 3. **الدقة المتناهية:** استخدام "مسافة هامينج" (Hamming Distance) مع الإزاحة الدائرية لضمان تطابق بصمات نفس الشخص حتى لو اختلف زاوية نظره.
 
 ---
-![صورة](https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/academic_iris.png)
 
 ## مخطط مراحل التحقق (Verification Workflow)
 
