@@ -22,28 +22,11 @@
 ## مخطط مراحل التحقق (Verification Workflow)
 
 عبر المخطط التالي (Mermaid Diagram)، نوضح مسار مرور الصورة من لحظة دخولها حتى صدور قرار المصادقة:
+<div align="center">
 
-```mermaid
-graph TD
-    A[صورة العين الخام<br>Raw Eye Image] --> B(المرحلة 1: التحديد الديناميكي<br>Dynamic Localization)
-    B -->|استخراج مركز الحدقة والقزحية| C(المرحلة 2: التسوية<br>Rubber-Sheet Normalization)
-    C -->|فرد النسيج بشكل مستطيل| D(المرحلة 3: عزل الضوضاء<br>Noise Masking)
-    D -->|قناع يستبعد الرموش والانعكاسات| E(المرحلة 4: استخراج الميزات<br>Gabor Filtering)
-    E -->|تحويل الترددات لنظام ثنائي| F[بصمة القزحية<br>IrisCode & Mask]
-    
-    F --> G{نظام إدارة قاعدة البيانات<br>Database Engine}
-    
-    G -->|أمر Enroll| H[(حفظ البصمة كملف .npz)]
-    G -->|أمر Authenticate| I[مطابقة مسافة هامينج<br>Hamming Distance Matching]
-    
-    I -->|تطبيق الإزاحة الدائرية لتصحيح الميلان| J{هل المسافة < 0.32؟}
-    J -->|نعم| K[✅ الدخول مصرح - ACCESS GRANTED]
-    J -->|لا| L[❌ الدخول مرفوض - ACCESS DENIED]
-    
-    style A fill:#2e3440,stroke:#88c0d0,stroke-width:2px,color:#d8dee9
-    style K fill:#a3be8c,stroke:#8fbcbb,stroke-width:2px,color:#2e3440
-    style L fill:#bf616a,stroke:#d08770,stroke-width:2px,color:#2e3440
-```
+   <img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/p2.png" width="800"/>
+  <p><em>Mermaid Diagram</em></p>
+</div>
 
 ---
 
@@ -70,7 +53,8 @@ graph TD
 * **لماذا نستخدمها؟** الشفرة الثنائية لا تتأثر بتغير السطوع الإجمالي، ومقارنتها سريعة جداً.
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/academic_iris.png" width="800"/>
+
+   <img src="https://raw.githubusercontent.com/waheeb71/iris-authentication-python/main/images/enroll_Ahmed.png" width="800"/>
   <p><em>صورة (1): الدوائر الدقيقة حول الحدقة والقزحية وعملية فرد القزحية (Normalization)</em></p>
 </div>
 
